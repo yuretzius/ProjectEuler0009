@@ -34,16 +34,13 @@ Their sum:
 
 $$p = a + b + c = km^2 - kn^2 + 2kmn +  km^2 + kn^2 = 2km(m+n)$$
 
-So since $1000 = 2^3 5^3$, there are not that many to create $m(m+n)$. 
+So since $1000 = 2^3 5^3$, there are not that many options to create $m(m+n)$. 
 
 Because $m + n$ must be odd, it can only be $5$, $25$, or $125$. But $1000 / 125 = 8$, meaning $km = 4$, so there is no solution $m > n$.
 If $m + n = 25$, $km = 20$, leading to solution $k = 1$, $m = 20$, and $n = 5$, but then GCD($m$,$n$)$=5$. So the only possibility left is
-$m + n = 5$, $km = 100$ 
+$m + n = 5$, $km = 100$, leadning to $k = 25$, $m = 4$, and $n = 1$, the only possible solution.
 
-It is easy to see, that the only suitable combination of $m$ and $m+n$ with $m > n$ is $4$ and $5$. 
-This means $k = 25$ and so the triple is $(200,375,425)$. 
-
-The code is designed to look for solutions for much larger arbitrary perimeters.
+The code is designed to look for solutions for much larger arbitrary perimeters. It was an excuse to work more on the prime factorization functions.
 
 
 
