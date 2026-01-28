@@ -117,7 +117,6 @@ int ipow(int base, int exp)
 // cycle 2: last bit 0, so no change to result, shift 10 to 1, base becomes 16
 // cycle 3: last bit 1, base is now 16, so result becomes 32, shift to 0, cycle terminates, returns 32
 {
-    
     int result = 1;
     for (;;) {
         if (exp & 1) // checks the last bit of exp is 1, equivalent to exp % 2
