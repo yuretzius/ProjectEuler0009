@@ -22,8 +22,11 @@ that's why I am sharing my work here for reference and educational purposes.
 
 The problem itself with this perimeter is very easy and does not require much computation.
 
-All Pythagorean triples can be generated using integers $m > n \geq 1$ that cannot have equal parity 
-and must have GCD($m$,$n$)=1. 
+All Pythagorean triples can be generated using integers $m$ and $n$ satisfying the folowing: 
+
+1. $m > n \geq 1$ ;
+2. cannot have equal parity, i. e. $m + n$ must be odd;
+3. GCD ( $m$ , $n$ ) = 1. 
 
 Then a primitive triple $a = m^2 - n^2$, $b = 2mn$, $c = m^2 + n^2$ starts a whole family of triples $(ka,kb,kc)$, $k \in \mathbb{N}$. 
 
