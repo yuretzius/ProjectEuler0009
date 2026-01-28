@@ -41,6 +41,6 @@ If $m + n = 25$, $km = 20$, leading to solution $k = 1$, $m = 20$, and $n = 5$, 
 $m + n = 5$, $km = 100$, leadning to $k = 25$, $m = 4$, and $n = 1$, the only possible solution.
 
 The code is designed to look for solutions for much larger arbitrary perimeters. It was an excuse to work more on the prime factorization functions.
-
+There are detailed comments in the code itself. C++ version mostly tries to emulate the python version, using C++ vectors instead of numpy arrays and python lists.
 
 
