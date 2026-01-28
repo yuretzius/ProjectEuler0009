@@ -203,7 +203,6 @@ int main() {
     cout << (c_end - c_start) / CLOCKS_PER_SEC << " sec\n";
     
     if (k == 0) cout << "this perimeter is impossible!" << endl;
-    //if (maxprod == 0) cout << "-1" << endl;
     else cout << "\tmaximum product: \t\t\t\t" << maxprod << endl;
     cout << "\tbeware of max unsigned long: \t\t\t" << ULONG_MAX << endl;
 }
