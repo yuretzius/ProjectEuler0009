@@ -130,14 +130,14 @@ def AllDivisors(N):
                 return # iterator stops
 
 start = perf_counter()              
-p = 1000000 # given perimeter 
+p = 1000 # given perimeter 
 k = 0
 if p % 2 == 0: # for a Pythagorean triple p = 2km(m+n), so p must be even
     all_factors = [u for u in AllDivisors(p//2)] 
     if len(all_factors) != 2: # len(all_factors) == 2 means p//2 is a prime and cannot be equal to km(m+n)
         # we look for a combination of km(m+n)
         # such that 
-        # m > n > 1
+        # m > n >= 1
         # GCD(m,n) = 0
         # m and n don't have equal parity, i. e. m + n is odd
         # k is any integer
