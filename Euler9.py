@@ -90,6 +90,10 @@ def AllDivisors(N):
         Note that this produces an unsorted list
         e. g. for N = 12 -> [1, 2, 4, 3, 6, 12]
     """
+    if N == 1: # corner case, otherwise get 1 twice
+        yield 1
+        return
+    
     factors, multiplicity = FactorMultiplicity(N) # produces lists of factors with corresponding multiplicities
     fmpairs = [(f,m) for (f,m) in zip(factors,multiplicity)] # zips them into a single list of pairs
     # e. g. for N = 60 we get [(2,2), (3,1), (5,1)]
